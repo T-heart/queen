@@ -9,8 +9,8 @@ $(function() {
 	var state = false;
 
 	if(start != null && start != "") {
-		alert('result:'+result);
-		if(result >10) {
+		
+		if(result > 100 && result < 3000) {
 			state = true;
 		}
 
