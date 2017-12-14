@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/audio.css" />
+
+		<!--必须放在head-->
+		<script src="js/jquery.js"></script>
+		
+
+		<title>婷</title>
+
+		
+		<script>
+			//参数设定
+			var time = 500; //切换时间
+			ntime = 500 //nav变换时间；
+		</script>
+		<script language="javascript">
+			var ss;
+			window.onload = function() {
+				var h = document.documentElement.clientHeight; //适应所有尺寸浏览器
+				document.getElementById('page1').style.height = h + "px";
+				document.getElementById('page2').style.height = h + "px";
+				document.getElementById('page3').style.height = h + "px";
+				document.getElementById('page5').style.height = h + "px";
+			}
+		</script>
+
+		<!--超链接闪烁-->
+		<script type="text/javascript">
+			function blinklink() {
+				if(!document.getElementById('blink').style.color) {
+					document.getElementById('blink').style.color = "red"
+				}
+				if(document.getElementById('blink').style.color == "red") {
+					document.getElementById('blink').style.color = "white"
+				} else {
+					document.getElementById('blink').style.color = "red"
+				}
+				timer = setTimeout("blinklink()", 300)
+			}
+
+			function stoptimer() {
+				clearTimeout(timer)
+			}
+		</script>
+
+	</head>
+
+	<body onload="blinklink()" onunload="stoptimer()">
+
+		
+		<!--音频-->
+		<div style="" id="audio" style="pointer-events: auto;">
+			<div style="" id="audio-btn" class="on" onclick="audio.changeClass(this,'media')">
+				<!--<audio loop="loop" src="music/爱情的城堡-欢子.mp3" id="media" preload="preload"></audio>-->
+				<audio loop="loop" src="music/信仰-张信哲.mp3" id="media" preload="preload"></audio>
+			</div>
+		</div>
+
+	
+
+		<ul id="content">
+			<li class="main1">
+				<!--第一页-->
+				<div class="page1" id="page1" style="height: 638px;">
+
+					<div class="page1_bg animated rollIn" style="display: block;">
+						<div style="position:relative"></div>
+						<span><img src="img/1.jpg" style="width: 122px;height: 122px;position: absolute;top: 79px;left: 28px;border-radius: 50%;"></span>
+						<span><img src="img/2.jpg" style="width: 112px;height: 112px;position: absolute;top: 82px;right: 22px;border-radius: 50%;"></span>
+						<span><img src="img/3.jpg" style="width: 136px;height: 136px;position: absolute;bottom: 10px;left: 266px;border-radius: 50%;"></span>
+					</div>
+
+					<div class="page1_t1 animated zoomInDown" style="display: block;">
+						<div style="position:relative"></div>
+						<span style="position: absolute;opacity: 0.9;top: 23px;left: 14px;color: #FFF;font-family: cursive;font-size: 24px;">&nbsp;♥</span>
+						<span style="position: absolute;top: 10px; left: 65px;font-size: 20px;">Our love</span>
+						<span style="position: absolute;top: 0px;top: 34px;left: 70px;"> 2013-12-14 </span>
+					</div>
+
+					<div class="page1_t2 animated zoomInDown" style="display: block;">
+						<img src="img/page1_t2.png" />
+						
+					</div>
+
+					<div class="page1_t3 animated zoomInDown" style="display: block;">
+						<img src="img/page1_t3.png" />
+					</div>
+
+					<div class="page1_cxx animated bounceInLeft" style="display: block;">
+						<span style="font-size: 45px;color: rgba(255, 255, 255, 0.93);">王婷婷</span>
+					</div>
+
+					<div class="page1_cc animated bounceInRight" style="display: block;">
+						<span style="font-size: 45px;color: rgba(255, 255, 255, 0.93);">&nbsp;田永春</span>
+					</div>
+
+					<div class="page1_heart animated pulse" style="display: block;"></div>
+
+					<div class="page1_left animated fadeInUp" style="display: block;">
+						<div style="position:relative"></div>
+						<img style="width:130px;position: absolute;transform: rotate(-12deg);-ms-transform: rotate(-12deg);-moz-transform: rotate(-12deg);-webkit-transform: rotate(-12deg);-o-transform: rotate(-12deg);left: 42px;border: 5px solid #fff;top: 16px;z-index: 3;border-radius: 2px" src="img/4.jpg">
+						<img style="width: 130px;position: absolute;transform: rotate(26deg);-ms-transform: rotate(26deg);-moz-transform: rotate(26deg);-webkit-transform: rotate(26deg);-o-transform: rotate(26deg);left: 198px;border: 5px solid #fff;top: 30px;z-index: 2;border-radius: 2px" src="img/5.jpg">
+						<img style="width: 130px;position: absolute;transform: rotate(0deg);-ms-transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transform: rotate(0deg);-o-transform: rotate(0deg);right: 16px;border: 5px solid #fff;top: 45px;z-index: 1;border-radius: 2px" src="img/6.jpg">
+					</div>
+
+					<div class="page1_right animated fadeInUp" style="display: block;">
+						<div style="position:relative"></div>
+						<img style="width:130px;position: absolute;transform: rotate(12deg);-ms-transform: rotate(12deg);-moz-transform: rotate(12deg);-webkit-transform: rotate(12deg);-o-transform: rotate(12deg);left: 42px;border: 5px solid #fff;top: 16px;z-index: 3;border-radius: 2px" src="img/7.jpg">
+						<img style="width: 130px;position: absolute;transform: rotate(-16deg);-ms-transform: rotate(-16deg);-moz-transform: rotate(-16deg);-webkit-transform: rotate(-16deg);-o-transform: rotate(-16deg);left: 198px;border: 5px solid #fff;top: 30px;z-index: 2;border-radius: 2px" src="img/8.jpg">
+						<img style="width: 130px;position: absolute;transform: rotate(8deg);-ms-transform: rotate(8deg);-moz-transform: rotate(8deg);-webkit-transform: rotate(8deg);-o-transform: rotate(8deg);right: 16px;border: 5px solid #fff;top: 45px;z-index: 1;border-radius: 2px" src="img/9.jpg">
+					</div>
+
+					<div class="page1_yun1" style="display: block; left: 313.04px;"></div>
+					<div class="page1_yun2" style="display: block; right: 273px;"></div>
+					<div class="page1_yun3" style="display: block; left: 526.724px;"></div>
+				</div>
+
+			</li>
+
+			<li class="main2">
+
+				<div class="page2" id="page2" style="height: 638px;">
+					<div class="page2_bg" style="display: none;">
+						<div style="position:relative"></div>
+						<div style="width: 460px; height: 333px;overflow: hidden;position: absolute;left: 75px;top: 80px;background: url(img/10.jpg)100%;background-position: center;border: 9px solid #fff;border-radius:4px;z-index:2"></div>
+						<div style="width: 380px;height: 300px;overflow: hidden;position: absolute;right: 75px;top: 193px;background: url(img/11.jpg)100%;background-position: center;border: 9px solid #fff;border-radius: 4px;z-index: 1;transform: rotate(8deg);-ms-transform: rotate(8deg);-moz-transform: rotate(8deg);-webkit-transform: rotate(8deg);-o-transform: rotate(8deg);"></div>
+						<span style="position: absolute;right: 75px;font-size: 30px;top: 55px;ransform: rotate(8deg);-ms-transform: rotate(8deg);-moz-transform: rotate(8deg);-webkit-transform: rotate(8deg);-o-transform: rotate(8deg);">
+							<p>一花一世界    一叶一追寻</p></br>
+							<p>今生不负伊    来世不忘情</p></span>
+						<span style="position: absolute;bottom: 30px;left: 35px;width: 450px;z-index: 3;font-size: 21px;text-align: center;">
+							<p>你是我的private属性</p></br>
+							<p>不提供getter/setter方法</p></br>
+							<p>只有我可以调用</p></span>
+					</div>
+				</div>
+
+			</li>
+
+			<li class="main3">
+				<div class="page3" id="page3" style="height: 638px;">
+					<div class="page3_bg lightSpeedIn" style="display: none;">
+						<div style="position:relative"></div>
+						<div style="padding: 50px;">
+							<div style="text-align: center;font-size:30px;margin-top: -10px;">爱的时光机</div>
+							<span style="position: absolute;top:100px;padding-right: 38px;font-size: 19px;">
+                    			<p>2012年9月，我第一次遇见你的时候，从没想过你在我生命中会是如此重要。</p></br>
+								<p>2013年12月，我们终于牵手在一起。</p></br>
+								<p>2015年6月，我们高中毕业了，回想高中三年的时光，最幸福的不过每天能和你前后排上课，时不时回头只为能看你一眼，多美好的时光，好怀念。</p></br>
+								<p>2015年9月，上大学了，你在昆明，我在万州，相隔千里，异地恋折磨着你我。我们之间的矛盾也越来越多，很幸运的是，我们能一起克服。两年多的异地恋，我们的心始终在一起，从未分离。</p></br>
+								<p>2017年12月，不知不觉就四年了，谢谢你的陪伴与包容，今后的时光，我们携手同行。<p>
+					
+							</span>
+
+							<img style="width: 140px;position: absolute;transform: rotate(-12deg);-ms-transform: rotate(-12deg);-moz-transform: rotate(-12deg);-webkit-transform: rotate(-12deg);-o-transform: rotate(-12deg);left: 152px;border: 5px solid #fff;top: 255px;z-index: 3;border-radius: 2px" src="img/12.jpg">
+							<img style="width: 140px;position: absolute;transform: rotate(26deg);-ms-transform: rotate(26deg);-moz-transform: rotate(26deg);-webkit-transform: rotate(26deg);-o-transform: rotate(26deg);left: 418px;border: 5px solid #fff;top: 255px;z-index: 2;border-radius: 2px" src="img/13.jpg">
+							<img style="width: 140px;position: absolute;transform: rotate(-12deg);-ms-transform: rotate(-12deg);-moz-transform: rotate(-12deg);-webkit-transform: rotate(-12deg);-o-transform: rotate(-12deg);;right: 156px;border: 5px solid #fff;top: 255px;z-index: 1;border-radius: 2px" src="img/14.jpg">
+
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="main5">
+
+				<div class="page5" id="page5" style="height: 638px;">
+
+					<div class="page5_bg" style="display: none;">
+
+						<div style="position:relative"></div>
+						<div style="width: 460px; height: 333px;overflow: hidden;position: absolute;left: 40px;top: 20px;background: url(img/15.jpg)100%;background-position: center;border: 9px solid #fff;border-radius:4px;z-index:2">
+
+						</div>
+
+						<div id="elapseClock">
+							<span style="font-size:30px">亲爱的，我们已经相爱</span>
+							<h2 id="elapseClocks" style="position: absolute;top: 60px;">
+								<span class="digit">1454</span> 天 <span class="digit">16</span> 小时 <span class="digit">48</span> 分钟 <span class="digit">00</span> 秒
+							</h2>
+
+							<span style="float: right;position:relative;margin-top: 100px;margin-right: -285px;pointer-events: auto;"><a id="blink" href="login.html">CLICK ME</a></span>
+
+						</div>
+						<div class="line"></div>
+					</div>
+
+				</div>
+
+			</li>
+
+		</ul>
+
+		<script type="text/javascript">
+			var together = new Date();
+			var strs = "2013-12-14 00:00:00";
+			var nowTime = new Date();
+			var together = new Date(strs.replace(/-/g, "/"));
+			timeElapse(together);
+			setInterval(function() {
+				timeElapse(together);
+			}, 500);
+
+			function timeElapse(c) {
+				var e = Date();
+				var f = (Date.parse(e) - Date.parse(c)) / 1000;
+				var g = Math.floor(f / (3600 * 24));
+				f = f % (3600 * 24);
+				var b = Math.floor(f / 3600);
+				if(b < 10) {
+					b = "0" + b
+				}
+				f = f % 3600;
+				var d = Math.floor(f / 60);
+				if(d < 10) {
+					d = "0" + d
+				}
+				f = f % 60;
+				if(f < 10) {
+					f = "0" + f
+				}
+				var a = '<span class="digit">' + g + '</span> 天 <span class="digit">' + b + '</span> 小时 <span class="digit">' + d + '</span> 分钟 <span class="digit">' + f + "</span> 秒";
+				$("#elapseClocks").html(a);
+			};
+		</script>
+
+	
+	
+
+
+		<script src="js/jquery.mousewheel.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/animate.js"></script>
+		<script src="js/login.js"></script>
+		<script type="text/javascript" src="js/audio.js"></script>
+
+	</body>
+
+</html>

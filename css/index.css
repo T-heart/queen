@@ -1,0 +1,353 @@
+@font-face {
+	font-family: myFont;
+	src: url("http://www.51bbw.cn/showlist/winx/font/yuangungun.ttf")
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	/*font-family: '方正卡通简体';*/
+	font-family: '楷体';
+	
+	font-weight: bold
+}
+
+
+
+
+
+.icon-pause,
+.icon-play {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(http://i.51bbw.cn/mp3/images/icon-music.png);
+	background-size: 32px 32px
+}
+
+.rotate {
+	-webkit-animation: rotating 1.2s linear infinite;
+	-moz-animation: rotating 1.2s linear infinite;
+	-o-animation: rotating 1.2s linear infinite;
+	animation: rotating 1.2s linear infinite
+}
+
+@-webkit-keyframes rotating {
+	from {
+		-webkit-transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg)
+	}
+}
+
+@keyframes rotating {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg)
+	}
+}
+
+@-moz-keyframes rotating {
+	from {
+		-moz-transform: rotate(0deg)
+	}
+	to {
+		-moz-transform: rotate(360deg)
+	}
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	padding: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0
+}
+
+html,
+body {
+	width: 100%;
+	color: #FFF;
+	background: url(../img/bg01.jpg) center 0 repeat-y fixed;
+	background-size: cover;
+	color: #fff;
+	padding: 0;
+	font: 14px/180% verdana,
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: #fff
+}
+
+#content {
+	height: 100%;
+	width: 100%
+}
+
+#content li {
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+}
+
+#content .main1 {}
+
+.page1 {
+	width: 1300px;
+	margin: auto;
+	position: relative;
+	overflow: hidden
+}
+
+.page1_bg {
+	background: url(../img/page1_bg.png);
+	width: 650px;
+	height: 500px;
+	position: absolute;
+	left: 300px;
+	top: 100px;
+	display: none
+}
+
+.page1_cc {
+	width: 200px;
+	height: 60px;
+	position: absolute;
+	left: 670px;
+	top: 50px;
+	display: none
+}
+
+.page1_cxx {
+	width: 200px;
+	height: 60px;
+	position: absolute;
+	left: 450px;
+	top: 50px;
+	display: none
+}
+
+.page1_heart {
+	background: url(../img/heart.png);
+	width: 75px;
+	height: 70px;
+	position: absolute;
+	left: 600px;
+	top: 30px;
+	display: none;
+	-webkit-animation: infinite;
+	vertical-align: middle
+}
+
+.page1_left {
+	width: 490px;
+	height: 250px;
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	display: none
+}
+
+.page1_right {
+	width: 490px;
+	height: 250px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	display: none
+}
+
+.page1_t1 {
+	background: url(../img/page1_t1.png);
+	width: 190px;
+	height: 60px;
+	position: absolute;
+	left: 535px;
+	top: 220px;
+	display: none
+}
+
+.page1_t2 {
+	width: 190px;
+	height: 50px;
+	position: absolute;
+	left: 540px;
+	top: 290px;
+	display: none
+}
+
+.page1_t3 {
+	width: 190px;
+	height: 30px;
+	position: absolute;
+	left: 540px;
+	top: 350px;
+	display: none
+}
+
+.page1_yun1 {
+	background: url(../img/page1_yun1.png);
+	width: 400px;
+	height: 200px;
+	position: fixed;
+	left: 50px;
+	top: 40px;
+	opacity: 0.8;
+	display: none;
+	z-index: 999;
+	text-align: center;
+	line-height: 150px;
+	font-size: 16px
+}
+
+.page1_yun2 {
+	background: url(../img/page1_yun2.png);
+	width: 400px;
+	height: 200px;
+	position: fixed;
+	right: 200px;
+	top: 170px;
+	opacity: 0.8;
+	z-index: 999;
+	display: none
+}
+
+.page1_yun3 {
+	background: url(../img/page1_yun1.png);
+	background-size: cover;
+	width: 600px;
+	height: 300px;
+	position: fixed;
+	left: 50px;
+	top: 420px;
+	opacity: 0.6;
+	display: none;
+	z-index: 999;
+	pointer-events: none;
+}
+
+#content .main2 {}
+
+.page2 {
+	width: 1300px;
+	margin: auto;
+	position: relative;
+	overflow: hidden
+}
+
+.page2_bg {
+	width: 1000px;
+	height: 600px;
+	margin-top: -300px;
+	margin-left: 150px;
+	display: none;
+	position: absolute;
+	top: 50%;
+	background: rgba(255, 255, 255, 0.28);
+	border-radius: 27px
+}
+
+#content .main3 {}
+
+.page3 {
+	width: 1300px;
+	margin: auto;
+	position: relative;
+	overflow: hidden
+}
+
+.page3_bg {
+	width: 1000px;
+	height: 600px;
+	margin-top: -300px;
+	margin-left: 150px;
+	display: none;
+	position: absolute;
+	top: 50%;
+	background: rgba(255, 255, 255, 0.28);
+	border-radius: 27px
+}
+
+#content .main5 {}
+
+.page5 {
+	width: 1300px;
+	margin: auto;
+	position: relative;
+	overflow: hidden
+}
+
+.page5_bg {
+	background: url(../img/page5_bg.png);
+	width: 1000px;
+	height: 600px;
+	margin-top: -300px;
+	margin-left: 150px;
+	display: none;
+	top: 50%;
+	position: absolute
+}
+
+.digit {
+	font-size: 40px
+}
+
+#elapseClock {
+	height: 50px;
+	width: 600px;
+	position: absolute;
+	bottom: 153px;
+	left: 114px
+}
+
+.line {
+	width: 100%;
+	height: 10px;
+	background: #fff;
+	bottom: 50px;
+	opacity: 0.8;
+	position: absolute;
+}
